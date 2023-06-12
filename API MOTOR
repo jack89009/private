@@ -1,0 +1,13 @@
+POST / HTTP/1.1
+Host: secretsmanager.godigit.com
+Accept-Encoding: identity
+X-Amz-Target: secretsmanager.GetPassword
+Content-Type: application/x-amz-json-1.1
+User-Agent: <user-agent-string>
+X-Amz-Date: <date>
+Authorization: AWS4-HMAC-SHA256 Credential=<47ac8fbe-e1aa-4fc7-bd7d-be7c7daa791a>,SignedHeaders=<headers>, Signature=<signature>
+Content-Length: <payload-size-bytes>
+
+{
+  "PasswordLength": 20
+}
